@@ -11,5 +11,5 @@ import { ComponenteEnLinea } from "./componente-en-linea/componente-en-linea";
   styleUrl: './app.css'
 })
 export class App {
-  protected mensaje = 'Hola Angular!';
+  protected titulo = 'Hola Mundo desde Angular!';
 }
