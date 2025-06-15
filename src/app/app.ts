@@ -6,7 +6,7 @@ import { ComponenteEnLinea } from "./componente-en-linea/componente-en-linea";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NuevoComponente, ComponenteEnLinea],
+  imports: [NuevoComponente],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
