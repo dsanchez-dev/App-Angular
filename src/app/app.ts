@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
-import { Replicador } from "./replicador/replicador";
-import { Saludar } from "./saludar/saludar";
+import { ComponenteIf } from './componente-if/componente-if';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [Replicador, Saludar],
+  imports: [ComponenteIf],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
-  protected titulo = 'Property binding en Angular';
+  titulo = 'Directiva @if en Angular';
 }
