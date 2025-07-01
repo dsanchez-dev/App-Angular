@@ -1,0 +1,28 @@
+<div class="container mt-5">
+    <h2 class="text-center">Lista de Tareas</h2>
+    <hr>
+
+    <ul class="list-group w-50 mx-auto">
+        <ng-container *ngFor="let tarea of tareas; let i = index">
+            <li class="list-group-item text-center shake-on-hover">
+                {{ tarea }}
+            </li>
+        </ng-container>
+    </ul>
+
+    <hr>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control text-center" placeholder="Crear nueva tarea" [(ngModel)]="nuevaTarea" />
+    </div>
+    <div class="input-group-append">
+        <button class="btn ms-2" [ngClass]="nuevaTarea.trim() ? 'btn-primary' : 'btn-secondary'"
+            [disabled]="!nuevaTarea.trim()" (click)="agregarTarea(nuevaTarea); nuevaTarea=''">
+            Agregar
+        </button>
+    </div>
+</div>
+
+<footer id="footer" class="footer text-center py-4 mt-5">
+    <p class="mb-0">&copy; 2025 - <strong>Ing. Daniel Sánchez González</strong></p>
+</footer>

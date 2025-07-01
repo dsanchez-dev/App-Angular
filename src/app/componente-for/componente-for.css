@@ -1,0 +1,20 @@
+.shake-on-hover:hover {
+  animation: shake 0.85s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+h2 {
+    color: #00ff3c;
+    font-size: 32px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: 'Arial Black', Arial, sans-serif;
+    letter-spacing: 2px;
+}
