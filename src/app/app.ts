@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import { AgregarTarea } from "./agregar-tarea/agregar-tarea";
-import { ComponenteFor } from "./componente-for/componente-for";
+import { PadreComponent } from './padre/padre';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ComponenteFor],
+  imports: [PadreComponent],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class App {
-  titulo = 'Directiva @For en Angular';
+  titulo = 'Decorador @Input en Angular';
+
+  currentYear: number = new Date().getFullYear();
 }

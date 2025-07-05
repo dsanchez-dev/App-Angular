@@ -1,5 +1,21 @@
-<div class="container text-center">
-  <h1 class="text-center text-warning">{{titulo}}</h1>
-  <app-componente-for/>
-</div>
- 
+<body class="page">
+  <div class="page-content">
+    <div class="container text-center">
+      <h1 class="text-center text-warning">{{titulo}}</h1>
+      <app-padre />
+    </div>
+  </div>
+
+  <div>
+    <footer class="footer">
+      <hr />
+      <div class="footer-content">
+        <p class="brand">Tienda Online</p>
+        <p class="copyright">
+          &copy; {{ currentYear }} Tienda Online. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+</body>

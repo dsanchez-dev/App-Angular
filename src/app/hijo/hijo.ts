@@ -1,22 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hijo',
+  standalone: true,
   imports: [],
   templateUrl: './hijo.html',
   styleUrl: './hijo.css'
 })
-export class Hijo {
-  private titulo = 'Hola desde el Titulo Hijo!';
-
-  //Getter de la propiedad
-  get mostrarTitulo() {
-    return this.titulo;
-  }
-  
-  //Metodo normal
-  public getTitulo() {
-    return this.titulo;
-  }
-
+export class HijoComponent {
+  // !: operador non-null assertion
+  // confie en que esta propiedad va ser inicializada
+  @Input() mensaje!: string;
 }

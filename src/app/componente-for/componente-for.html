@@ -13,7 +13,7 @@
     <hr>
 
     <div class="input-group mb-3">
-        <input type="text" class="form-control text-center" placeholder="Crear nueva tarea" [(ngModel)]="nuevaTarea" />
+        <input type="text" class="form-control text-center" style="max-width: 300px; margin: 0 auto;" placeholder="Crear nueva tarea" [(ngModel)]="nuevaTarea" />
     </div>
     <div class="input-group-append">
         <button class="btn ms-2" [ngClass]="nuevaTarea.trim() ? 'btn-primary' : 'btn-secondary'"
@@ -22,7 +22,3 @@
         </button>
     </div>
 </div>
-
-<footer id="footer" class="footer text-center py-4 mt-5">
-    <p class="mb-0">&copy; 2025 - <strong>Ing. Daniel Sánchez González</strong></p>
-</footer>

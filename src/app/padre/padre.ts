@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { Hijo } from "./hijo/hijo";
+import { HijoComponent } from '../hijo/hijo';
 
 @Component({
   selector: 'app-padre',
-  imports: [Hijo],
+  standalone: true,
+  imports: [HijoComponent],
   templateUrl: './padre.html',
   styleUrl: './padre.css'
 })
-export class Padre {
-
+export class PadreComponent {
+  mensajePadre: string = "Mensaje desde el componente padre"
 }
