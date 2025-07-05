@@ -6,8 +6,13 @@ import { HijoComponent } from '../hijo/hijo';
   standalone: true,
   imports: [HijoComponent],
   templateUrl: './padre.html',
-  styleUrl: './padre.css'
+  styleUrl: './padre.css',
 })
 export class PadreComponent {
-  mensajePadre: string = "Mensaje desde el componente padre"
+  mensaje: String = '';
+
+  //Se emitio una cadena (String)
+  recibirMensaje(mensajeHijo: String) {
+    this.mensaje = mensajeHijo;
+  }
 }

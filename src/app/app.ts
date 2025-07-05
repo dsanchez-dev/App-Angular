@@ -9,7 +9,7 @@ import { PadreComponent } from './padre/padre';
   styleUrl: './app.css',
 })
 export class App {
-  titulo = 'Decorador @Input en Angular';
+  titulo = 'Decorador @Output en Angular';
 
   currentYear: number = new Date().getFullYear();
 }
