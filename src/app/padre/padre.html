@@ -1,13 +1,5 @@
 <div class="container">
     <h3 class="text-success">Componente padre</h3>
-    <br>
-    <app-hijo (notificarPadre)="recibirMensaje($event)"></app-hijo>
-
-    <div class="container" style="max-width: 50%;">
-        @if (mensaje) {
-        <p class="mt-3 alert alert-success">{{ mensaje }}</p>
-        }@else {
-        <p class="mt-3 alert alert-danger">No hay mensajes del hijo</p>
-        }
-    </div>
+    <app-hijo/>
+    <button class="btn btn-primary mt-3 " (click)="cambiarMensaje()">Cambiar mensaje del hijo</button>
 </div>

@@ -6,7 +6,7 @@ import { ViewChildComponent } from "./view-child/view-child";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ViewChildComponent],
+  imports: [PadreComponent],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
